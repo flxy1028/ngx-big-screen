@@ -1,0 +1,24 @@
+<div class="pl-8 pt-8 flex items-center">
+  <i class="iconfont icon-tongji4 !text-xl text-[#5cd9e8]"></i>
+  <span class="text-xs mx-8">任务通过率</span>
+  <dv-decoration3 class="w-100 h-20"></dv-decoration3>
+</div>
+<div echarts [options]="options" class="h-220"></div>
+<div class="text-sm overflow-hidden">
+  <div
+    class="float-right w-1/2 text-gray-400 relative mt-8"
+    *ngFor="let item of dataArr; index as index"
+  >
+    <div class="flex justify-end pr-4 text-[#5cd9e8]">
+      <i
+        class="iconfont text-xl text-[#5cd9e8] ml-20"
+        [class]="[iconFont[index]]"
+      ></i>
+      <span class="text-2xl w-120 h-30 text-center">{{ item.number }}</span>
+    </div>
+    <p class="text-center">
+      <span> {{ item.text }} </span>
+      <span class="text-yellow-200">(件)</span>
+    </p>
+  </div>
+</div>
