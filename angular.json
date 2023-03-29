@@ -20,7 +20,12 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.css", "./assets/icon/iconfont.css"],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "@jiaminghi/c-render",
+              "@jiaminghi/charts",
+              "@common/echart/map/fujian"
+            ]
           },
           "configurations": {
             "production": {
