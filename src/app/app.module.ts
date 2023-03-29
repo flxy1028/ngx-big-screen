@@ -8,7 +8,7 @@ import { AppRoutes } from './app.routing';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, RouterModule, AppRoutes],
-  providers: [{ useValue: '/ngx-big-screen', provide: APP_BASE_HREF }],
+  // providers: [{ useValue: '/ngx-big-screen/', provide: APP_BASE_HREF }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
