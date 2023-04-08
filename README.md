@@ -1,2 +1,2 @@
 # ngx-big-screen
-vue-big-screen的angular版
+:apple: vue-big-screen的angular版
